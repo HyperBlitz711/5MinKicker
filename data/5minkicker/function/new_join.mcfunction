@@ -3,6 +3,7 @@
 #kill @e[tag=lastPos]
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
+effect give @p minecraft:resistance 3 4 true
 
 # Handle data swap
 data modify entity @p Pos set from storage game:playerdata data.Pos
@@ -21,7 +22,6 @@ data modify entity @p FallDistance set from storage game:playerdata data.FallDis
 data modify entity @p Air set from storage game:playerdata data.Air
 # TODO: Handle XP, effects, dimension
 function 5minkicker:set_dimension
-scoreboard players set #game iter 0
 function 5minkicker:apply_effects
-function 5minkicker:apply_xp
+function 5minkicker:apply_xp with storage game:playerdata data
 scoreboard players set #game paused 0
