@@ -1,4 +1,4 @@
 scoreboard players set #game paused 1
-# Disable time/weather/mobs
+# Disable time/weather
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false

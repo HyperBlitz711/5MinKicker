@@ -16,12 +16,9 @@ data modify entity @p foodSaturationLevel set from storage game:playerdata data.
 data modify entity @p foodExhaustionLevel set from storage game:playerdata data.foodExhaustionLevel
 data modify entity @p EnderItems set from storage game:playerdata data.EnderItems
 # Unnecessary with share mod
-#data modify entity @p Inventory set from storage game:playerdata data.Inventory
+data modify entity @p Inventory set from storage game:playerdata data.Inventory
 data modify entity @p fall_distance set from storage game:playerdata data.fall_distance
 data modify entity @p Air set from storage game:playerdata data.Air
-# TODO: Handle XP, effects, dimension
-execute if data storage game:playerdata data.active_effects run say mhm1
 function 5minkicker:apply_effects
-execute if data storage game:playerdata data.active_effects run say mhm2
 function 5minkicker:apply_xp with storage game:playerdata data
 scoreboard players set #game paused 0
