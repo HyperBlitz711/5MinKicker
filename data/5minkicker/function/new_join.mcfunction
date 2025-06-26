@@ -1,10 +1,7 @@
-#tp @p @e[tag=lastPos, limit=1]
-#forceload remove all
-#kill @e[tag=lastPos]
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
+effect clear @p
 effect give @p minecraft:resistance 3 4 true
-
 # Handle data swap
 function 5minkicker:set_dimension
 data modify entity @p Pos set from storage game:playerdata data.Pos
@@ -22,7 +19,8 @@ data modify entity @p EnderItems set from storage game:playerdata data.EnderItem
 data modify entity @p FallDistance set from storage game:playerdata data.FallDistance
 data modify entity @p Air set from storage game:playerdata data.Air
 # TODO: Handle XP, effects, dimension
-# with storage game:playerdata data
+execute if data storage game:playerdata data.active_effects run say mhm1
 function 5minkicker:apply_effects
+execute if data storage game:playerdata data.active_effects run say mhm2
 function 5minkicker:apply_xp with storage game:playerdata data
 scoreboard players set #game paused 0
