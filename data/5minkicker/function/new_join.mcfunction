@@ -8,6 +8,7 @@ data modify entity @p Pos set from storage game:playerdata data.Pos
 data modify entity @p Fire set from storage game:playerdata data.Fire
 data modify entity @p Rotation set from storage game:playerdata data.Rotation
 data modify entity @p Motion set from storage game:playerdata data.Motion
+data modify entity @p respawn set from storage game:playerdata data.respawn
 data modify entity @p Health set from storage game:playerdata data.Health
 data modify entity @p AbsorptionAmount set from storage game:playerdata data.AbsorptionAmount
 data modify entity @p foodLevel set from storage game:playerdata data.foodLevel
