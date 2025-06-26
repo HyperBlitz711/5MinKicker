@@ -1,4 +1,5 @@
 **5MinKicker**
+
 This is a minecraft datapack that does the following:
 - Kicks the player after 5 minutes
 - Saves their playerdata
