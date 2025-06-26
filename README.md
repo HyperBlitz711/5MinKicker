@@ -3,7 +3,7 @@
 This is a minecraft datapack that does the following:
 - Kicks the player after 5 minutes
 - Saves their playerdata
-- When a new player joins, automatically loads the previous player's data, effectively joining on the same account.
+- When a new player joins, automatically loads the previous player's data, simulating joining on the same account.
 
 It is designed for a very specific minigame, where multiple players attempt to beat the game by taking turns, ideally with no context of current game progression.
 
