@@ -10,8 +10,10 @@ It is designed for a very specific minigame, where multiple players attempt to b
 **How to Use**
 - Set up a fabric server, any version after 1.20.2 *should* work
 - In server properties, change `function-permission-level` to 4, `max-players` to 1
-- Install the prerequisite mods: https://modrinth.com/mod/modify-player-data & https://modrinth.com/mod/sharedinv (fabric api also required)
+- Install the prerequisite mod: https://modrinth.com/mod/modify-player-data
 - Download the .zip of this repository and place it in the your_server/your_world/datapacks folder
+- Configure playtime (in console: `scoreboard players set #game playtime <playtime>`)
+- Configure kick/ban on timeout (in console: `scoreboard players set #game ban 0` 0 for kick, 1 for ban)
 - Make sure the datapack is enabled
 
 **Notes**
